@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<h1><%= acronym %></h1>
+<% if gallery %>
+<div class="row">
+  <div class="small-12 columns">
+    <ul class="ict4g-orbit" data-orbit>
+      <% for image in gallery %>
+      <li>
+        <%= image_tag(image.url, alt:"")%>
+        <div class="orbit-caption">
+          <%=image.caption%>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<% end %>
+<div class="row">
+  <div class="large-8 small-12 columns">
+      <h1><%= title %></h1>
+    <p><%= abstract %></p>
+    <% if description %>
+      <h3>Description</h3>
+      <p><%=description %></p>
+    <% end %>
+    <% if pubs %>
+      <h3>Publications</h3>
+      <p>
+        <% pubs.each do |key| %>
+            <% pub=search(key)%>
+            <%if pub!=nil %>
+              <%=  partial "publication_item.html.erb", locals: {pub: pub} %>
+            <% end %>
+        <%end%>
+      </p>
+    <% end %>
+
+  </div>
+
+  <div class="large-4 small-12 columns">
+    <div class="row">
+      <div class="small-11 columns project_info">
+        <center>
+        <% if logo %>
+        <%= image_tag("../"+logo, alt:"Project Logo", title:"Project Logo", width:"100px")%>
+        <% end %>
+        </center>
+
+        <h3>Project Info</h3>
+
+	<ul class="no-bullet">
+	  <li><b>Type:</b> <%= source %></li>
+	  <li><b>Period:</b> <%= start_date %> - <%= if end_date!= nil then end_date else "running" end %></li>
+          <li><b>Contact:</b> <%= contact %></li>
+          <li><b>Website:</b> <%= link_to(website, website) if website %></li>
+	</ul>
+
+        <% if page_team %>
+          <h3>Project Team</h3>
+          <ul class="square">
+      	  <% for team in page_team %>
+
+                <%#
+                This build a relationship between the project and the members page.
+                It looks for a member with the same name and grabs the link, so that we can use it.%>
+                <% person_link = nil
+                   for person in data.members
+                    if person.name == team.name
+                     person_link = "/profile/"+slugify(person.name)+".html" %>
+                  <% end %>
+                <% end %>
+
+                <li><b>
+                  <% if person_link %>
+                  <%= link_to team.name, person_link %>
+                  <% else %>
+                  <%= team.name %>
+                  <% end %> </b>,<br/> <%= team.role%></li>
+      	  <% end %>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

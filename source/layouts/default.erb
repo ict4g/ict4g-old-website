@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- feeds: news and seminars -->
+  <!-- link rel="alternate" type="application/atom+xml" href="/atom.xml" title="News Atom Feed" -->
+  <!-- link rel="alternate" type="application/atom+xml" href="/seminars_atom.xml" title="Seminars Atom Feed"-->
+
+  <title>ICT4G | Fondazione Bruno Kessler</title>
+
+  <!-- ASSETS -->
+  <%= stylesheet_link_tag "app" %>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= javascript_include_tag "all" %>
+  <style>
+  body {
+    background: url(<%= aurl("/images/website/background.png") %>);
+    background-repeat:repeat;
+  }
+
+  header {
+    background: #FF9323;
+  }
+
+  .fbk-header {
+    background: rgb(47,47,47);
+    height: 36px;
+    padding-top: 5px;
+  }
+
+  .ict4g-header {
+    height: 190px;
+    background: url(<%= aurl('/images/website/header.png') %>);
+  }
+
+  .my-menubar a:hover {
+    text-decoration: none;
+  }
+
+  @media all and (max-width: 720px) {
+    .my-menubar {  height: auto; }
+}
+
+  .main-content {
+    background: white;
+    padding: 10px;
+  }
+
+  .footer-row {
+    border-top: 5px solid orange;
+    margin-top: 5px;
+    padding-top: 10px;
+    font-size: small;
+  }
+
+  a {
+    color: orange;
+  }
+
+  a:hover {
+    color: orange;
+    text-decoration: underline;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: orange;
+  }
+
+  .main-content {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .left {
+    float:left !important;
+  }
+
+  .bibliography li {
+    margin-bottom: 12px;
+  }
+  </style>
+</head>
+<body>
+  <header>
+      <div class="hide-for-small large-12 columns fbk-header">
+          <div class="row">
+              <div class="medium-2 large-2 columns">
+                  <% link_to "http://www.fbk.eu" do %>
+                      <%= image_tag("/images/website/fbk_logo.png") %>
+                  <% end %>
+              </div>
+              <div class="hide-for-small-12 medium-6 large-3 columns">
+                  <%= partial "layouts/search_field.html" %>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="hide-for-small large-12 columns ict4g-header">
+              <div class="row">
+                  <div class="large-12 columns">
+                      <%= image_tag("/images/website/ict4g-logo.png", width:"160px") %>
+                  </div>
+              </div>
+          </div>
+          <div class="my-menubar">
+              <div class="large-12 columns contain-to-grid">
+                  <%= partial "menubar.html" %>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <section>
+    <div class="main-content row">
+      <div class="small-12 columns">
+        <h1><%= current_page.data.title %></h1>
+        <%= yield %>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row footer-row">
+      <div class="large-3 columns">
+        <%= image_tag("/images/website/ICT_logo.png") %>
+      </div>
+      <div class="large-6 columns">
+        © 2013-2016 FBK - ICT4G | Via Sommarive, 18 | I-38123 Trento |
+      </div>
+      <div class="large-3 columns">
+        Grafica Netwise <br />
+        Layout <%= link_to "Zurb Foundation", "http://foundation.zurb.com" %> <br />
+        Built with <%= link_to "Middleman", "https://middlemanapp.com/" %>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+   $(document).foundation();
+
+   //required only by publications
+   $(".bibtex-button").click(function () {
+     $(this).closest('li').find(".bibentry").slideToggle();
+   });
+   $(".abstract-button").click(function () {
+     $(this).closest('li').find(".abstract").slideToggle();
+   });
+  </script>
+</body>
+</html>

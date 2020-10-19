@@ -1,0 +1,370 @@
+- name: Adolfo Villafiorita
+  email: adolfo.villafiorita@fbk.eu
+  role: head of unit
+  phone: +39 0461 314 311
+  github: avillafiorita
+  homepage: http://ict4g.net/adolfo
+  picture: adolfo.jpg
+  short_bio: |
+    He graduated at the University of Genova in 1993 and got his PhD
+    from the University of Ancona in "Artificial Intelligent Systems"
+    in 1997.  Visiting scholar of the AI Department of the University
+    of Edinburgh in 1992 and of the Formal Reasoning Group at Stanford
+    in 1995, he is now a Senior Researcher at Fondazione Bruno
+    Kessler, where he leads the ICT4G unit.
+
+    He has worked and led various industrial and technology transfer
+    projects related to the verification of safety critical systems.
+    He is also a contract professor at the University of Trento, where
+    he taught Software Engineering and, from 2004, Software Project
+    Management.
+
+- name: Pietro Molini
+  email: pbmolini@fbk.eu
+  role: 'research & development'
+  phone: +39 0461 314 390
+  github: pbmolini
+  homepage:
+  picture: pietro.jpg
+  short_bio: |
+    Pietro received his MSc in 2005 in Telecommunications Engineering
+    from University of Genoa University of Genoa, Italy. He worked for
+    University of Genoa, for the Italian National Institute of Nuclear
+    Physics and for the University of Padua before joining the ICT4G
+    at the Fondazione Bruno Kessler, Trento.
+
+- name: Francesca Longo
+  email: fralongo@fbk.eu
+  role: collaborator
+  phone: +39 0461 314 390
+  github:
+  homepage:
+  picture: francesca.jpg
+  past: yes
+  short_bio: |
+    Francesca completed her MSc at FBK in 2006 and have been
+    collaborating with the ICT4G research group since then.
+
+- name: Aaron Ciaghi
+  email: ciaghi@fbk.eu
+  role: 'research & development'
+  phone: +39 0461 314 122
+  github: aaronsama
+  homepage: http://aaronsama.github.io/
+  picture: aaron.jpg
+  short_bio: |
+    I completed my PhD in ICT in 2014 and I am currently the project
+    manager of BringTheFood and LRIT4AE. I worked on my bachelor thesis
+    on Italian law modeling at FBK in 2007 and I have been collaborating
+    with the ICT4G research group since then. I participated to the
+    ATLAS dual master degree in Computer Science at the University
+    of Trento and the Georgia Institute of Technology (Atlanta, GA),
+    graduating in 2010 at both universities (cum laude at UNITN). I have
+    also done various teaching activities, including 4 summer schools
+    at Maputo Living Lab.
+
+- name: Ahmed Fadhil
+  email: fadhil@fbk.eu
+  role: phd student
+  phone: "+39 3666429366"
+  github: ahmedfadhil
+  homepage: https://ahmedsalih.wordpress.com/
+  picture: ahmed.png
+  short_bio: >
+   Ahmed Fadhil, Currently a PhD student in Computer Science at
+   University of Trento. Recently started working in FBK with the
+   ICT4G research unit. Acquired MSc in Computer Science - University
+   of Trento - Italy (2014). Acquired BSc in Information Technology -
+   Eastern Mediterranean University - Cyprus (2012).
+
+- name: Ali Al-Shammari
+  email: alshammari@fbk.eu
+  role: phd student
+  past: yes
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  picture: ali.jpg
+  short_bio: |
+    Ali Al-Shammari is Computer Engineer born on October 1980 at
+    Karbala-Iraq Hold Bsc. degree from college of engineering -
+    Baghdad University (2002) and Master degree in computer networks
+    from Iraqi Commission for Computers & Informatics (2005).
+
+- name: Birhanu Eshete
+  email: eshete@fbk.eu
+  role: phd student
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  picture: birhanu.jpg
+  past: yes
+  short_bio: |
+    Birhanu Mekuria received his BSc in 2003 and MSc in 2007 ( with a
+    thesis "Context Information Refinement for Pervasive Medical
+    Systems" ) in Computer Science from Addis Ababa University,
+    Ethiopia. He worked as a Software Developer and Instructor before
+    joining the ICT4G group at FBK-IRST in August 2009. Currently, he
+    is working on ICT4G initiatives with emphasis on security
+    vulnerability analysis and attack detection for web applications
+    and web browsers.
+
+- name: Ilse Grau
+  email: ilsegrau@fbk.eu
+  role: phd student
+  phone:
+  github:
+  homepage:
+  picture: ilse.jpg
+  past: true
+  short_bio: |
+    Ilse Grau graduated in Software Engineering at Catholic University
+    of Asuncion, Paraguay. She has worked in the Telecommunication
+    sector for several years. She is currently undertaking doctoral
+    research at the University of Trento, Italy, in collaboration with
+    Fondazione Bruno Kessler, in the area of ICT4G.
+
+- name: Lorenzo Rigato
+  email: lore91tanz@gmail.com
+  role: 'research & development'
+  past: yes
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  picture: lorenzo.jpg
+  short_bio: |
+
+
+- name: Andrea Nodari
+  email: andrea.nodari91@gmail.com
+  role: 'research & development'
+  past: yes
+  phone:
+  github: nodo
+  twitter: "@andreanodari"
+  homepage: http://nodo.github.io/
+  picture: andrea.jpg
+  short_bio: |
+     He is a Computer Science student at the University of Trento, and
+     currently he is working on his bachelor thesis with the title:
+     "Transforming trash into gems: a machine learning approach to
+     improve domestic waste".
+
+     He is working as a web developer and junior researcher in the
+     ICT4G group collaborating in various projects, in particular his
+     work focuses on developing ruby on rails applications to find new
+     ways of using technology to foster economic and social
+     development.
+
+- name: Roberto Zen
+  email: rob.zenn92@hotmail.it
+  role: msc student
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  picture: robzen.jpeg
+  past: yes
+  short_bio: |
+
+
+- name: Andrea Bontempelli
+  email: andrea.bontempelli@alice.it
+  role: bsc student
+  past: yes
+  phone: +39 0461 314 405
+  past: yes
+  github:
+  homepage:
+  picture: andrea_bonte.png
+  short_bio: |
+
+
+- name: Damiano Stoffie
+  email: stoffie@gmx.com
+  role: bsc student
+  phone: +39 0461 314 405
+  github: stoffie
+  homepage:
+  picture: damiano_stoffie.jpg
+  short_bio: |
+
+
+- name: Giulia Petronella
+  email: giulia.petronella@gmail.com
+  role: bsc student
+  past: yes
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  picture: giulia.jpg
+  past: yes
+  short_bio: |
+    Giulia got her BSc with us and graduated discussing a thesis on a
+    educational project about promoting environmentalism in schools.
+
+
+- name: Riccardo Marconcini
+  email: rikkardo91@gmail.com
+  past: yes
+  role: bsc student
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  picture:
+  short_bio: |
+
+- name: Martino Secchi
+  email: smart91k@gmail.com
+  role: bsc student
+  past: yes
+  phone: +39 0461 314 405
+  github: martinosecchi
+  homepage:
+  picture: martino.jpg
+  short_bio: >-
+    Currently a BSc student at the University of Trento (Information and Business Organization Engineering),
+    Martino spent one year in 2008 as an exchange student in Germany.
+
+- name: Laura Scuccato
+  role: BSc
+  past: yes
+  short_bio: |
+    Laura did her BSc with us, spending a few months in a Brazilian
+    cooperative and coming out with a set of proposal to make the
+    organization more efficient.
+
+- name: Komminist Weldemariam
+  role: Fellow
+  past: yes
+  short_bio: |
+    Komminist did his PhD and his PostDoc in the group, contributing
+    to various areas, including BringTheFood.
+
+- name: Kamrul Hassan
+  role: MSc
+  past: yes
+  short_bio: |
+    Kamrul did his MSc with us and graduated discussing a thesis about
+    collaborative planning tools.
+
+- name: Rashedul Hasan
+  role: MSc
+  past: yes
+  short_bio: |
+    Rashedul did his MSc with us and graduated discussing a thesis
+    about Vaccination Reminder Systems in Bangladesh.
+
+- name: Andrea Dalla Valle
+  role: MSc
+  past: yes
+  short_bio: |
+    Andrea did his MSc with us and graduated discussing a thesis
+    analyzing the maintainability of Italian Laws using Object
+    Oriented metrics.
+
+- name: Andrea Mattioli
+  role: Fellow
+  past: yes
+  short_bio: |
+    Andrea spent various years in the group, contributing greatly to
+    the shift to the ICT4G domain
+
+- name: Riccardo Minati
+  past: yes
+  role: BSc
+  short_bio: |
+    Riccardo took his BSc work with us and graduated discussing a
+    thesis about food waste.
+
+- name: Michele Fogarolli
+  past: yes
+  role: BSc
+  short_bio: |
+    Michele took hi BSc with us and graduated discussing a thesis about CRATO
+    (Collaborative Risk Assessment Tool)
+
+- name: Valentino Sartori
+  role: BSc
+  past: yes
+  short_bio: |
+    Valentino did his MSc with us and graduated discussing a thesis
+    analyzing efficiency and productivity of open source project
+    teams.
+
+- name: Iniobong Thomas
+  role: MSc
+  past: yes
+  short_bio: |
+    Iniobong did his Master in e-Government with us
+
+- name: Andrea Zambelli
+  role: MSc
+  past: yes
+  short_bio: |
+    Andrea did his BSc with us, analyzing interactions is a social
+    network used to organize the activities of a team.
+
+- name: Gaia Trecarichi
+  email: trecarichi@fbk.eu
+  role: 'research & development'
+  past: yes
+  phone: +39 0461 314 405
+  github: gtrecari
+  homepage: 'https://www.linkedin.com/profile/view?id=9788602&trk'
+  picture: gaia.png
+  short_bio: |
+    Gaia obtained a PhD in Computer Science from the University of Trento in
+    2010 and worked in EU and local funded projects focusing her research
+    interests in knowledge representation, interaction modeling, user studies,
+    and the design and development of mobile applications. In 2013 she joined
+    the FBK research center where she is involved in the design and development
+    of web and mobile services.
+
+- name: Giulio Michelon
+  email: giulio.michelon@me.com
+  role: front-end designer
+  past: yes
+  phone: +39 0461 314 390
+  github: juleship
+  homepage: http://giuliomichelon.com
+  picture: giulio.jpg
+  short_bio: |
+
+- name: Michele Bof
+  email: michelebof93@gmail.com
+  role: bsc
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  past: yes
+  picture: michele.jpg
+  short_bio: |
+
+- name: Davide Da Rech
+  email: davide.darech@gmail.com
+  role: bsc student
+  past: yes
+  phone: +39 0461 314 405
+  github:
+  homepage:
+  picture: davide.jpg
+  short_bio: |
+
+- name: Michele Efisio Argiolas
+  email: argiolas93@gmail.com
+  role: msc student
+  past: yes
+  homepage: https://it.linkedin.com/pub/michele-efisio-argiolas/65/5b9/709
+  picture: michele_efisio.jpg
+  short_bio: >
+    Student in Information and Business Engineering at the University of Trento.
+
+- name: Lorenzo Dalvit
+  email: l.dalvit@ru.ac.za
+  role: visiting professor
+  picture: lorenzo_dalvit.png
+  short_bio: >-
+    Lorenzo Dalvit has a long experience in ICT4D and education.  With more
+    than 50 publications in the area, he is a professor at Rhodes University
+    (South Africa), where he has significantly contributed to the Siyakhula
+    Living Lab.

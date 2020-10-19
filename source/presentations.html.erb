@@ -1,0 +1,78 @@
+---
+title: Presentations
+layout: default
+---
+<div class="row">
+    <div class="small-12 large-3 columns">
+        <%# build a list of all unique tags %>
+        <% unique_tags = Array.new %>
+        <% data.slides.each do |presentation| %>
+            <% for tag in presentation.tags %>
+                <% if !unique_tags.include?(tag) %>
+                    <% unique_tags.push(tag)%>
+                <% end %>
+            <% end %>
+        <% end %>
+        <% unique_tags = unique_tags.sort%>
+
+        <h3>FILTER</h3>
+        <p>
+            <%= link_to "show all","#",onclick:"$(this).show_all()", class:"primary label", id:"show_all"%>
+
+            <% for tag in unique_tags %>
+                <%= link_to tag,"#",onclick:"$(this).filter_by_tag()", class:"secondary label", id: tag %>
+            <% end %>
+        </p>
+    </div>
+    <div class="small-12 large-9 columns">
+        <p>This page contains a list of slides and presentations available for download.</p>
+
+        <% data.slides.sort_by { |a| a[:date] }.reverse.each do |presentation| %>
+            <div class="row">
+                <div class="small-12 columns presentation_div <%= presentation.tags.join(" ") %>">
+                    <p>
+                        <b>
+                            <% if presentation.url!=nil %>
+                                <a href="<%=presentation.url%>"><%=presentation.title%></a><br />
+                            <% else %>
+                                <div style="color: #FFA500;"><%=presentation.title%></div>
+                            <% end %>
+                        </b> 
+                        Author(s): <%=presentation.author%> <br />
+                        Date: <%= if presentation.date != nil
+                              presentation.date.strftime('%A, %B %d, %Y')
+                              end %><br />
+                        Tags:
+                        <% for tag in presentation.tags %>
+                            <a href="#" onclick="$(this).filter_by_tag()"
+                               class="secondary label"  id="<%=tag%>"><%=tag%></a>
+                        <% end %> 
+                        <br />
+                        <%= presentation.description %>
+                    </p>
+                </div> 
+            </div>
+        <% end %>
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+  $.fn.filter_by_tag = function() {
+    $('#show_all').removeClass('primary').addClass('secondary');
+    $('.primary.label').removeClass('primary').addClass('secondary'); 
+    this.removeClass('secondary').addClass('primary');
+    $('.primary.label').each(function(){
+      $(".presentation_div").hide();
+      $("."+$(this).attr('id')).show();
+    });
+  }
+
+  $.fn.show_all = function() {
+    $('.primary.label').removeClass('primary').addClass('secondary');
+    $('#show_all').removeClass('secondary').addClass('primary');
+    $(".presentation_div").show();
+  }
+});
+</script>

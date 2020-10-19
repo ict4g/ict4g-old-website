@@ -1,0 +1,104 @@
+- name: BringTheFood
+  logo: /images/logos/btf-logo.png
+  description: |
+    <p>A significant amount of food is wasted everyday by restaurants,
+    caterers, supermarkets, etc. Nevertheless, people in need seek
+    help from organizations collecting and distributing unused but
+    still edible food. Such organizations mostly rely on agreements
+    with regular donors. Access to information about food availability
+    and occasional donors is limited and not systematic, creating
+    logistic bottlenecks.</p>
+
+    <p>"BringTheFood" is a crowdsourcing web/mobile application that
+    allows donors to seamlessly publish offers and easily coordinate
+    collections. Collectors can view the offers in their area on a map
+    and reserve those that are available and schedule pickup directly
+    with the donor.</p>
+  url: http://www.bringthefood.org
+
+- past: yes
+  name: ComeButta
+  logo: /images/logos/comebutta.png
+  description: |
+    <p>Reducing waste and improve recyclable waste collection are two
+    important goals of every waste-management agency. However, the
+    involvement of citizens and their capability to make a different
+    is often limited, due to several factors, among which the
+    difficulty in perceiving that a change in behavior can make a
+    difference and the difficulty in getting real-time feedback about
+    cases which are difficult to classify.</p>
+
+    <p>The main goal of ComeButta is helping citizens in determining the
+    correct way to dispose of garbage.  The approach reverses the
+    "standard" information flow: rather than having citizens consult
+    long lists of examples, ComeButta allows citizens to ask
+    questions, which are answered by an automatic classifier trained
+    on previous cases submitted by experts and citizens.</p>
+  url: http://www.comebutta.org
+  
+- past: yes
+  name: SAMO
+  logo: /images/logos/samo.png
+  description: |
+    <p>An important aspect of any procurement activity is guaranteeing
+    that contracted work gets delivered on time and within budget. For
+    some contractors, rushing to achieve the previous two goals (or to
+    increase margins) sometimes comes at the expenses of the quality
+    of the delivered product (e.g. unfinished or low quality
+    work).</p>
+
+    <p>Since citizens are the ultimate beneficiaries of the policies
+    intervention of donors, empowering them in supporting quality
+    inspection and quality assurance activities of procurement
+    activities can help achieve two significant goals:</p>
+
+    <ul>
+      <li><b>close the loop</b> in various procurement activities, by
+          having the beneficiaries systematically collect information
+          about the quality of delivered results;
+      </li>
+      <li><b>move the responsibility of monitoring service delivery where
+          it belongs, namely with citizens</b>; in the process help
+          making citizens more aware of their role in making their
+          Governments accountable for effective implementations and
+          delivery of services.
+      </li>
+    </ul>
+
+    <p>SAMO is a web platform to crowdsource procurement indicators,
+    which we have experimented, in collaboration with the WorldBank
+    and the Ministry of Education of the Government of Mozambique in
+    the Moamba region.</p>
+  url: http://www.ict4sa.org/samo
+
+- name: GasApp
+  logo: /images/logos/gasapp.png
+  description: |
+    <p>According to MIPAAF, mountain agriculture is a sector worth 30
+    billion euros which involves more than 2.5 million farms (280.000
+    of which are Italian). Geographical location and size, however,
+    make it difficult for such farms to be self-sustainable and many
+    of them rely on subsidies and other public funds.</p>
+
+    <p>In fact, a report of ATABio (an Association of producers of
+    bio-food in Trentino) specifies that increasing promotion and
+    commercialization of products is one of the main areas of
+    improvement for producers of bio-food in Trentino.
+
+    <p>GasAPP is a fork of BringTheFood focusing on bio-food,
+    sustaining local buyers groups and producers of high-quality
+    products. The platform matches demand and offer.</p>
+  url: http://gasapp.me
+
+- name: BTF Ristorazione
+  logo: /images/logos/btf.png
+  description: |
+    <p>
+      A web/mobile app for restaurants and canteen to notify food collectors about daily 
+      surplus. The food collectors see how many meals they can take so they optimise the logistics.
+    </p>
+    <p>
+      The app is in a pilot stage and it is currently experimented by three school canteens in Trentino
+      and the <em>SitiCibo</em> initiative of the Italian Food Bank.
+    </p>
+  url: http://ristorazione.bringfood.org

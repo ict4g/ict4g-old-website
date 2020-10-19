@@ -1,0 +1,351 @@
+- title: "Opal: Ruby in the browser"
+  author: "Damiano Stoffie"
+  tags:
+    - ruby
+    - opal
+    - javascript
+  date: 2016-12-22
+  url: https://drive.google.com/file/d/0B6aEEZAnspHdQVZPOFFJdXgzWUE/view?usp=sharing
+  description: >-
+    Opal is a Ruby to JavaScript source-to-source compiler. It
+    comes packed with the Ruby corelib you know and love. There we show a quick
+    introduction on how Opal can be used in practice.
+
+- title: "Mappo - Un'applicazione web per l'ausilio grafico alla gestione di portfolio progetti"
+  author: Martino Secchi
+  tags:
+      - BSc
+      - geolocation
+      - spm
+  date: 2014-12-11
+  url: https://drive.google.com/open?id=0B5dFMvp6B0-TYjA5YUxBeE9TYTA&authuser=0
+  description: >-
+    A webapp for mapping project portfolios.
+    In Italian.
+
+- title: COMEBUTTA ... fai la cosa giusta
+  author: Adolfo Villafiorita
+  tags:
+      - waste
+      - recycling
+      - comebutta
+  date: 2013-06-12
+  url: https://speakerdeck.com/avillafiorita/comebutta-conferenza-stampa
+  description: >-
+    Brief description of the COMEBUTTA project.
+    In Italian.
+
+- title: BringTheFood
+  author: Adolfo Villafiorita and Paolo Costa
+  tags:
+      - food
+      - waste
+      - recycling
+      - btf
+  date: 2013-11-19
+  url: https://speakerdeck.com/avillafiorita/tutti-nello-stesso-piatto-2013
+  description: >-
+    Some considerations about food waste and the role of
+    new technologies.
+
+- title: "ICT4G group [in Italian]"
+  author: ICT4G group
+  tags:
+      - ict4d
+  date: 2014-02-07
+  venue: FBK
+  description: >-
+    Presentazione delle attività del gruppo ICT4G in italiano.
+  url: https://speakerdeck.com/aaronsama/ict4g-group-official-presentation-ita
+
+- title: "TDD: Test-Driven Development in Rails"
+  author: Roberto Zen
+  tags:
+      - ror
+      - cucumber
+      - rspec
+      - capybara
+      - testing
+  date: 2014-02-27
+  venue: FBK
+  description: >-
+    Introduction to TDD in Ruby on Rails.
+
+    From zero to rspec, cucumber, and capybara in about one
+    hour.
+  url: https://speakerdeck.com/robzenn92/tdd-and-bdd-in-ruby
+
+- title: "Doing Good with ICT"
+  author: Aaron Ciaghi
+  tags:
+      - ict4d
+      - agile
+  date: 2014-03-26
+  venue: UNITN
+  description: |
+    Introduction to ICT for Development and ICT for addressing Social
+    Issues. The presentation includes a very small intro to Agile
+    techniques.
+
+    This presentation was given at UNITN in preparation for the ICT
+    Days 2014 Hackathon event.
+  url: https://speakerdeck.com/aaronsama/doing-good-with-ict
+
+- title: "ComeButta at Transversal Technologies"
+  author: Pietro Molini
+  tags:
+      - comebutta
+      - android
+      - ictdays
+  date: 2014-04-03
+  venue: UNITN
+  description: >-
+    Presentation about ComeButta and DoveButta given at the
+    Transversal Technologies contest during ICTdays2014
+  url: https://speakerdeck.com/pbmolini/comebutta-at-transversal-technologies
+
+- title: "Fighting waste with new technologies: ComeButta and BringTheFood"
+  author: Adolfo Villafiorita
+  tags:
+      - comebutta
+      - btf
+      - waste
+      - recycling
+      - food
+  date: 2014-04-09
+  venue: Fusions Camp, Bologna
+  description: >-
+    Presentation of the ICT4G tecnologies to FusionsCamp meeting (University of Bologna, April 2014)
+  url: https://speakerdeck.com/avillafiorita/fighting-food-waste
+
+- title: "Standardizing ICT for Development"
+  author: Aaron Ciaghi
+  date: 2014-04-10
+  tags:
+      - ictd
+      - phd
+  venue: PhD Defense, Aula Ofek
+  description: >-
+    Aaron's PhD dissertation
+  url: https://speakerdeck.com/aaronsama/standardizing-ict-for-development
+
+- title: "La tua Impronta fa la Differenza"
+  author: Giulia Petronella
+  tags:
+      - education
+      - environment
+      - BSc
+  date: 2014-07-18
+  venue: BSc Thesis defence, University of Trento
+  description: >-
+    Impostazione e sperimentazione di un progetto per promuovere comportamenti virtuosi in ambito ambientale
+
+    BSc Thesis of Giulia Petronella
+  url: https://speakerdeck.com/pbmolini/la-tua-impronta-fa-la-differenza
+
+- title: "Gerhin* and Cucumber*"
+  author: Roberto Zen
+  tags:
+      - ror
+      - cucumber
+      - testing
+      - gherkin
+  date: 2014-07-16
+  description: >-
+    A new test-case path composition approach to testing Ruby on Rails
+    web applications.
+  url: https://speakerdeck.com/robzenn92/gherkin-star-and-cucumber-star
+
+- title: "Designing for the African Prepaid Mobile Internet Generation"
+  author: Alette Schoon
+  tags:
+      - ict4d
+      - design
+      - SouthAfrica
+  date: 2014-09-18
+  venue: Sala Stringa, FBK
+  description: |
+    The profile of South Africans online is changing as
+    internet-enabled smart phones and feature phones become ubiquitous
+    in low-income communities. However, poorer users are using a
+    different internet, a prepaid internet trickle where text is
+    dominant and where most people only briefly enter “the cloud” of
+    content sharing. This means that app developers and designers need
+    to re-imagine a world beyond the binaries of access or non-access
+    where internet use can mean multiple things. This seminar explores
+    how unemployed young people from the low-income black
+    neighbourhoods of Grahamstown, a small town in South Africa, use
+    ICT under very difficult economic circumstances. In these digital
+    ecologies, PCs are peripheral, and digital production and
+    connectivity revolves around the mobile. Media sharing happens
+    predominantly offline via Bluetooth, but also now on online
+    platforms that allows users to only download what they want - such
+    as media sharing WAP sites on Russian platforms. Social networks
+    such as WhatsApp and Facebook mobile are also becoming
+    increasingly important.  Creative expression is very important for
+    these young people and is seen as essential for developing the
+    community – here development is not only seen in material
+    terms. Young people use mobile phones and computers for a variety
+    of creative activities and Facebook plays a key part in sharing
+    these. Using a PC becomes a challenge when all internet access is
+    negotiated through the mobile, and PCs are a makeshift assembly of
+    old parts put together in backroom computer ‘workshops’ by
+    self-taught technicians. The author, although not a designer or
+    computer scientist herself, is keen to explore design
+    considerations and welcomes interaction on what these practices
+    could mean for ICT4D design. How do we design for those
+    intermittently on the mobile internet but outside “the cloud”, for
+    example? How do we design for second-hand communal PC users who
+    are part of the mobile-first generation and exclusively use the
+    mobile internet? When mobile phones are designed primarily for
+    content consumption – in a space where there are few PCs and many
+    people who want to create content – how can we design apps to make
+    them more suited to digital production? The author will share some
+    examples from the UCT (University of Cape Town) ICT4D lab, where
+    designers have focused on Bluetooth technology to respond to
+    limited internet access.
+  url: https://speakerdeck.com/aaronsama/designing-for-the-african-prepaid-mobile-internet-generation
+
+- title: "Adattamento di un'interfaccia web per sistemi mobile su rete GSM: il caso di Bring The Food"
+  author: Andrea Bontempelli
+  tags:
+      - btf
+      - sms
+      - BSc
+  venue: BSc Thesis defence, University of Trento
+  date: 2014-09-29
+  description: >-
+    Andrea's BSc Thesis defence about integrating SMS functionalities in BringTheFood
+  url: https://speakerdeck.com/aaronsama/adattamento-di-uninterfaccia-web-per-sistemi-mobile-su-rete-gsm-il-caso-di-bring-the-food
+
+- title: "Understanding Best Practices for ICTD Projects: towards a Maturity Model"
+  author: Aaron Ciaghi
+  tags:
+      - ict4d
+      - maturitymodel
+      - spm
+  date: 2014-11-03
+  venue: IDIA 2014 Conference, Port Elizabeth
+  description: |
+    The implementation of Information and Communication Technologies
+    in developmental contexts presents specific social and technical
+    challenges. Understanding the lessons learned and documenting best
+    practices under extreme conditions, such as the ones found on the
+    African continent, can provide valuable insights for ICT
+    deployment in developing countries. At the same time, the
+    experience in use cases and technical know-how of developed
+    countries can help regions such as Sub-Saharan Africa in
+    harnessing the full potential of ICT for social and economic
+    development. This paper describes the preliminary results of an
+    international project based on the exchange between two European
+    institutes and two South African universities, whose goal is to
+    define a set of best practices to improve the success rate of ICT
+    for Development projects. This led to the definition of a Maturity
+    Model to evaluate performing organizations with respect to what
+    characterises a successful ICTD project to guide them in the
+    improvement of their processes towards becoming more effective in
+    addressing the needs of rural communities. The practices and
+    maturity goals included in the maturity model have been collected
+    through an extensive literature review and interviews with project
+    managers.
+  url: https://speakerdeck.com/aaronsama/understanding-best-practices-for-ictd-projects-towards-a-maturity-model
+
+- title: User-centered methodologies and techniques for requirements gathering 
+  author: Gaia Trecarichi
+  tags:
+      - requirements
+  date: 2015-01-30
+  venue: Internal Seminar
+  url: https://drive.google.com/open?id=0B5dFMvp6B0-TbWJPUDRjbldrTHM&authuser=0
+
+- title: Apache Cordova
+  author: Michele Efisio Argiolas
+  tags:
+      - mobile
+  date: 2015-03-05
+  venue: Internal Seminar
+  url: https://drive.google.com/open?id=0B5dFMvp6B0-TSDlNWGVtU2VWbHM&authuser=0
+  description: |
+    Introduction to Cordova
+
+- title: Framework 7
+  author: Davide Da Rech
+  tags:
+      - mobile
+      - html frameworks
+  date: 2015-03-19
+  venue: Internal Seminar
+  url: https://drive.google.com/open?id=0B5dFMvp6B0-TSjd6YWlyZElBVHc&authuser=0
+  description: |
+    Introduction to Framework7
+
+- title: Chocolate Chip UI
+  author: Ali Al-Shammari
+  tags:
+      - mobile
+      - html frameworks
+  date: 2015-02-20
+  venue: Internal Seminar
+  url: https://drive.google.com/file/d/0B5dFMvp6B0-TU2Flcml2bDJHRkE/view?usp=sharing
+  description: |
+    Introduction to Chocolate Chip UI
+
+- title: Web Components and Polymer
+  author: Gaia Trecarichi
+  tags:
+      - mobile
+      - html frameworks
+  date: 2015-04-16
+  venue: Internal Seminar
+  url: https://drive.google.com/open?id=0B5dFMvp6B0-TOGpySGlxenEzQ2c&authuser=0
+  description: |
+    Introduction to Web Components and Polymer
+
+- title: "Cucumber: Best Practices, Troubles, and Ideas"
+  author: Roberto Zen
+  tags:
+      - ror
+      - cucumber
+      - rspec
+      - testing
+  date: 2015-03-13
+  venue: FBK
+  description: |
+    Some considerations about test driven development with Cucumber
+  url: https://speakerdeck.com/robzenn92/cucumber-best-practices-troubles-and-ideas
+
+- title: "The Food Composition Databases (FCDBs)"
+  author: Ahmed Fadhil
+  tags:
+      - food
+  date: 2015-03-13
+  venue: FBK
+  description: |
+    This study analyzes various food databases of different nations
+    and compares the data about food each database contains.  This
+    step will guide us to analyze the data in each databank and avoid
+    redundancy in the data, hence create a consistent set of data
+    table.
+
+  url: https://drive.google.com/open?id=0B5dFMvp6B0-TdE1FRjJfOUhkQk0&authuser=0
+
+- title: Introduction to Sinatra
+  author: Adolfo Villafiorita
+  date: 2015-05-06
+  tags:
+    - ruby
+  url: https://github.com/avillafiorita/sinatra-talk/blob/master/presentation.textile
+  description: |
+    Quick introduction to Sinatra with personal (positive)
+    considerations about the framework and two running examples (one
+    with data mapper and other for single user applications).
+
+- title: App Cross-platform
+  author: Lorenzo Waldner
+  tags:
+    - ruby
+    - mobile
+  url: https://drive.google.com/open?id=0B5dFMvp6B0-TTjB3Ym4ta0g4bWc&authuser=0
+  date: 2013-06-13
+  description: |
+    Evaluation of frameworks for mobile cross-platform development

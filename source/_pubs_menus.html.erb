@@ -1,0 +1,17 @@
+<% if current!='all' and current!='featured' and current!='by_year' and current!='by_topic' %>
+    <p>ERRORE variabile current errata</p> 
+<% else %>
+    <ul class="side-nav">
+        <li class="heading">Show</li>
+	<li id='featured'><a href="featured_publications.html">Featured</a></li>
+	<li id='all'><a href="publications.html">By Type</a></li>
+	<li id='by_year'><a href="publications_by_year.html">By Year</a></li>
+	<li id='by_topic'><a href="publications_by_topic.html">By Topic</a></li>
+    </ul>
+<% end %>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('li#<%=current %>').addClass('active');
+});
+</script>

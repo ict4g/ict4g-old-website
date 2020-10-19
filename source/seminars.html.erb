@@ -1,0 +1,105 @@
+---
+title: Seminars
+layout: default
+---
+<script>
+ // get the calendar
+ $(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "http://ict4g.org/ict4g-cal/ict4g-shared.ics",
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+ });
+
+ function same_day(date1, date2) {
+     return date1.getDate() == date2.getDate() &&
+            date1.getMonth() == date2.getMonth() &&
+            date1.getYear() == date2.getYear();
+ }
+
+ function after(first, future) {
+     return future > first;
+ }
+
+function processData(allText) {
+    icalParser.parseIcal(allText);
+    events = icalParser.icals[0].events;
+    
+    seminars = new Array
+
+    length = events.length
+    for (var i = 0; i < length; i++) {
+        event = events[i];
+
+        summary = event.summary[0].value;
+        place = event.location[0].value;
+        description = event.description ? event.description[0].value : "";
+
+        oo = event.dtstart[0].value;
+        start = new Date(oo.slice(0, 4), oo.slice(4, 6) - 1, oo.slice(6, 8),
+                         oo.slice(9, 11), oo.slice(11, 13),oo.slice(13, 15));
+        
+        if (summary.indexOf("Seminar") > -1) {
+            today = new Date();
+
+            if (same_day(start, today)) {
+                type = "today";
+            } else if (after(today, start)) {
+                type = "future"
+            } else {
+                type = "past"
+            }
+                
+            seminars.push([type, summary, start, place, description, event])
+        }
+    }
+
+    seminars.sort(function(a, b){
+        // Turn your strings into dates, and then subtract them
+        // to get a value that is either negative, positive, or zero.
+        return b[2] - a[2]
+    });
+
+    for (var i = 0; i < seminars.length; i++) {
+        seminar_html =
+            "<div class=\"small-12 columns seminar-item\">" +
+            "  <p><b>" + seminars[i][1] + "</b></p>" +
+            "  <p>Date and Time: " + seminars[i][2] + "</p>" +
+            "  <p class=\"location\">Location: " + seminars[i][3] + "</p>" +
+            "  <p class=\"speaker\">Abstract: " + seminars[i][4] + "</p>" +
+            "</div>";
+
+        if (seminars[i][0] == "future") {
+            $("#upcoming-list").append(seminar_html)
+        } else if (seminars[i][0] == "today") {
+            $("#today-seminar").html(seminar_html)
+        } else {
+            $("#past-list").append(seminar_html)
+        }
+    }
+ }
+</script>
+
+
+The ict4g group organizes weekly seminars on topics related to ICT for development, software development, and technologies for web and mobile applications.  The seminars are usually organized on thursdays @ 11.00.
+
+<h2>Today</h2>
+
+<div class="row">
+    <div id="today-seminar"><div class="small-12 columns">NO SEMINAR PLANNED FOR TODAY</div></div>
+</div>
+
+<h2>Upcoming Seminars</h2>
+
+<div class="row" id="upcoming-list">
+</div>
+
+<h2>Past Seminars</h2>
+
+<div class="row" id="past-list">
+</div>
+
+
+

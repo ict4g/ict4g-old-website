@@ -1,0 +1,46 @@
+---
+title:
+layout: default
+---
+<div class="row">
+    <div class="small-12 large-3 columns">
+        <%= partial "pubs_menus.html", locals: {current:'all'} %>
+
+	<h3>FILTER</h3>
+	<a href="#" class="primary label">All</a>
+	<% (Time.now.year).downto(1994) do |year| %>
+	    <a href="#" id='type-<%= year %>' class="secondary label"><%= year %></a>
+	<% end %>
+        </ul>
+    </div>
+    <div class="small-12 large-9 columns">
+        <h1>Publications by Year</h1>
+        <div id="publications-container">
+	    <% (Time.now.year).downto(1994) do |year| %>   
+	  	<div class="type-container" id="type-<%= year %>">
+	            <h2><%=year%></h2>
+		    <ol>
+		  	<% b=bib_data() %>
+		        <%for i in 0...b.length %>
+		            <%if b[i][:year].to_i == year %>
+		                <%= partial "publication_item.html.erb", locals: {pub: b[i]} %>
+		            <%end %>
+		        <%end%>
+		    </ol>
+		</div>
+	    <%end%>
+        </div>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $('a[id^="type-"]').on('click',function(){
+              $('a').removeClass('primary').addClass('secondary');
+              $(this).addClass('primary').removeClass('secondary');
+	    $('#publications-container').find('div.type-container').toggle(true);
+	    if (this.id != 'type-all') {
+	      $('#publications-container').find('div.type-container[id!="' + this.id + '"]').toggle();
+	    }
+	  });
+	});
+</script>

@@ -1,0 +1,442 @@
+- title: "Zero A Scuola"
+  acronym: ZaS
+  logo:
+  source: "Comunità di Valle della Vallagarina"
+  start_date: 2015-11-26
+  end_date: 2016-06-30
+  location: Vallagarina, Italy
+  tags:
+  pubs:
+  contact: Adolfo Villafiorita
+  website: http://ict4g.org/zeroascuola
+  abstract: |
+    <p>
+      The main goal of this project is reducing food waste
+      in school canteens by measuring how much food each student leaves on the
+      tray at every meal and by generating awareness on food waste among the students.
+    </p>
+  team:
+    - name: Pietro Molini
+      role: PM, education coordinator
+    - name: Aaron Ciaghi
+      role: Research, training and mobility coordination
+    - name: Adolfo Villafiorita
+      role: Program Management
+
+- title: "The App Factory"
+  acronym:
+  logo:
+  source: "Italian Ministry of Foreign Affairs and International Cooperation"
+  start_date: 2015-06-01
+  end_date: 2016-12-31
+  location: Alice, South Africa
+  tags:
+  pubs:
+  contact: Adolfo Villafiorita
+  website: http://ict4g.org/appfactory
+  abstract: |
+    <p>The project has the goal of sharing, consolidating, and improving current practices to build software products for emerging markets, taking into account different constraints, such as time-to-market, value for users, and maintainability. The project is implemented through the exchange of experiences (of the partners and of the SMEs collaborating with the partners), training of students on the methodological aspects, and experimentation.</p>
+  team:
+    - name: Pietro Molini
+      role: Research and training
+    - name: Aaron Ciaghi
+      role: Research, training and mobility coordination
+    - name: Adolfo Villafiorita
+      role: Principal investigator
+    - name: Lorenzo Dalvit
+      role: Visiting Professor and local coordination
+
+- title: "Hour of Code"
+  acronym: HoC
+  logo: /images/logos/hoc.png
+  source:
+  start_date: "2015"
+  end_date:
+  location: Several places
+  tags:
+  pubs:
+  contact: Adolfo Villafiorita
+  website:
+  abstract: |
+    <p>
+      The Hour of Code is a global movement reaching over 100 million students in more than 180 countries.
+      It started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.
+    </p>
+    <p>
+      We have been organizing Hour of Code from 2015 in different events and in different venues. Here is a list of the most relevant ones:
+    </p>
+    <ul>
+      <li>Researchers' Night 2015 @ Trento</li>
+      <li>Chiamata alle Arti e alle Scienze 2016 @ FEM</li>
+      <li>Illuminiamo il futuro 2016 @ FBK</li>
+      <li>Introduzione all'informatica @ Carcere di Spini 2015</li>
+      <li>Introduzione all'informatica @ Carcere di Spini 2016</li>
+    </ul>
+  team:
+    - name: Pietro Molini
+      role: Facilitator
+    - name: Aaron Ciaghi
+      role: Facilitator
+    - name: Adolfo Villafiorita
+      role: Facilitator
+    - name: Roberto Zen
+      role: Facilitator
+
+- past: yes
+  title: "OraDona"
+  acronym:
+  logo: /images/logos/ora_dona.png
+  source: "Fondazione Banco Alimentare"
+  start_date: 2015-03-01
+  end_date: 2015-08-31
+  location: Italy
+  tags:
+  website: http://www.collettainoratorio.it
+  abstract: |
+    <p>App and Website for a contest organized by Fondazione Banco Alimentare (the Italian Food Bank), and LaFabbrica, funded by the Ministry of Agriculture to promote food collection for charity in oratories.</p>
+  team:
+    - name: Pietro Molini
+      role: PM & Server Development
+    - name: Aaron Ciaghi
+      role: Mobile Development
+    - name: Giulio Michelon
+      role: Front-end development
+    - name: Adolfo Villafiorita
+      role: Program Management
+
+- past: yes
+  title: "ComeButta?"
+  acronym:
+  logo: /images/logos/comebutta.png
+  source:
+  start_date: 2012-01-01
+  end_date:
+  location: Pergine Valsugana, Italy
+  tags:
+  pubs:
+      - bsc_andrea_nodari
+  website: http://www.comebutta.it
+  abstract: |
+    <p>Using IT to reduce waste</p>
+
+    <p>This is a long-term collaboration with AMNU, the company for
+    waste disposal in Alta Valsugana, with the goal of experimenting
+    technologies for reducing domestic waste</p>
+  team:
+    - name: Adolfo Villafiorita
+      role: Program Management
+    - name: Pietro Molini
+      role: PM & Server Development
+    - name: Damiano Stoffie
+      role: Server Development
+    - name: Giulio Michelon
+      role: Front-end development
+
+- past: yes
+  title: "Dal Frigorifero a chi ha bisogno"
+  acronym:
+  logo:
+  source: "Indesit Company-Whirlpool"
+  start_date: 2014-12-31
+  end_date: 2015-12-31
+  location: Fabriano, Italy
+  tags:
+  abstract: |
+    <p>The goal of this project is to develop smart services for
+    consumers to help reduce food waste.</p>
+  team:
+    - name: Adolfo Villafiorita
+      role: Program Management
+    - name: Aaron Ciaghi
+      role: PM & Server Development
+    - name: Lorenzo Rigato
+      role: Mobile Development
+    - name: Giulio Michelon
+      role: Front-end development
+
+- title: "Maputo Living Lab"
+  acronym: MLL
+  logo: /images/logos/mll.png
+  source: "Autonomous Province of Trento and Government of Mozambique"
+  location: "Maputo, Mozambique"
+  tags:
+  pubs:
+        - '6701783'
+        - DBLP:conf/dev/SahiluVWBZ12
+        - Zewge:2012:UGM:2457276.2457285
+        - Ciaghi:2011uq
+  start_date: 2011-01-01
+  end_date: 2014-06-30
+  website: http://www.maputolivinglab.org
+  abstract: |
+    <p>The Maputo Living Lab (MLL) aims at applying the open innovation
+    paradigm of Living Labs by involving the local community as a
+    source for project ideas and as end-user group for the Living
+    Lab's products.</p>
+
+    <p>Furthermore, being located in a developing region,
+    MLL will have the goal of fostering local development by working
+    as a start-up incubator to promote local entrepreneurship, helping
+    the execution of innovative projects that can contribute to the
+    improvement of the quality of life in Mozambique.</p>
+  team:
+    - name: Adolfo Villafiorita
+      role: Program Management
+    - name: Marco Battisti
+      role: Project Management
+    - name: Valerio Joao
+      role: Teaching and Supervision
+    - name: Aaron Ciaghi
+      role: Teaching and Supervision
+    - name: Pietro Molini
+      role: Teaching and Supervision
+    - name: Eduardo Ali
+      role: Connections with Industry
+    - name: Mohammad Tasin Sidi
+      role: Connections with Industry
+
+- title: "ICT in Low Resource Settings: Innovating for Africa and Europe through Living Lab"
+  acronym: LRIT4AE
+  logo: /images/logos/LRIT4AE.png
+  source: "IRSES - European Union"
+  location: "Grahamstown, South Africa"
+  tags:
+  pubs:
+      - aaron-phd
+      - Ciaghi:2012uq
+  start_date: 2012-11-01
+  end_date: 2014-12-31
+  abstract: |
+    <p>The implementation of ICT projects in developmental contexts is a
+    growing phenomenon. It presents interesting social and technical
+    challenges.</p>
+
+    <p>Understanding of lessons learnt and best practices
+    under extreme conditions such as the ones found on the African
+    continent can provide valuable insights for ICT deployment in
+    developed countries.</p>
+
+    <p>At the same time, the experience in use cases
+    and technical know-how of developed countries can help regions
+    such as Sub-Saharan Africa in harnessing the full potential of ICT
+    for social and economic development.</p>
+  team:
+    - name: Adolfo Villafiorita
+      role: Program Management
+    - name: Aaron Ciaghi
+      role: Visiting Researcher
+    - name: Pietro Molini
+      role: Visiting Researcher
+    - name: Lorenzo Dalvit
+      role: Visiting Professor and local coordination
+
+- past: yes
+  title: "Random Hack of Kindness Trento"
+  acronym: RHoK-Trento
+  logo: /images/logos/rhok_logo.png
+  source: ""
+  location: "Trento, Italy"
+  tags:
+  pubs:
+  start_date: 2011-06-01
+  end_date:
+  abstract: >-
+    <p>The ICT4G group regularly organizes hackathons and crash courses
+    on RoR in Trento.  The group regularly hosts RHoK (Random Hack of Kindness).</p>
+
+    <p>During the hackathon, students and researchers work together to
+    invent and build solutions, which can help improve the world.</p>
+
+    <p>More information can be found on the
+    <a href="http://ict4g.github.io/rhok-trento/">RHoK-Trento</a> website</p>
+
+- title: "eGIF4M - Interoperability Framework for Mozambique"
+  acronym: eGIF4M
+  logo: /images/logos/egif4m.png
+  source: "UTICT, Government of Mozambique"
+  location: "Mozambique"
+  tags:
+  pubs:
+      - Shvaiko:2010zr
+      - DBLP:conf/egov/ShvaikoVZCFH09
+  start_date: 2008-10-01
+  end_date:
+  abstract: >-
+    <p>The project, financed by UTICT (the Technical Unit for the
+    Implementation of e-Government in Mozambique) run in 2009 and was carried out
+    in collaboration with the University of Trento and CREATE-NET.</p>
+
+    <p>The goal had the goal of defining an interoperability framework for the e-Government systems
+    of Mozambique and defining an implementation plan to carry out the
+    transition.  The definition of the framework
+    presented some interesting challenges due to the need of taking into account
+    some specific requirements typical of a fast-growing, developing country,
+    among which we mention:</p>
+
+    <ul>
+    <li>The centralized, top-down approach typically associated to any
+    interoperability framework had to be reconciled with the fast,
+    decentralized, and loosely controlled development of IT solutions going on
+    in Mozambique
+
+    <li>the standardization process, typically comprising the different
+    technical layers to guarantee proper interoperability of the IT systems,
+    had to be "lifted" at the software management and development level, to
+    simplify longer-term maintainability of the IT solutions integration of
+    manual and automated processes had to be taken into account the framework
+    had to be scalable and flexible in order to make its adoption sustainable
+    in the longer term.</li>
+    </ul>
+  team:
+    - name: Adolfo Villafiorita
+      role: Consultant
+    - name: Alessandro Zorer
+      role: Consultant
+    - name: Pavel Shvaiko
+      role: Consultant
+
+- past: yes
+  title: ICT4Laws
+  acronym: ICT4Laws
+  source:
+  location: "Trento, Italy"
+  tags:
+  pubs:
+      - Ciaghi:2011woa
+      - Ciaghi:2010kn
+      - Ciaghi:2011fk
+  start_date: 2009-01-01
+  end_date: 2011-01-01
+  team:
+    - name: Aaron Ciaghi
+      role: Ontology Definition, Methodology Extension
+    - name: Adolfo Villafiorita
+      role: Quantitative Assessment
+    - name: Andrea Mattioli
+      role: VLPM and BPR Methodology
+    - name: Andrea Dalla Valle
+      role: Quantitative Assessment
+    - name: Iniobong Thomas
+      role: Front-end prototyping
+  abstract: >-
+    <p>Law-makers, designers of legal information systems and citizens
+    are often challenged by the complexity of bodies of laws and the
+    growing number of references needed to interpret a law.
+    This line of activities investigates ways in which laws can be
+    presented to citizens and law makers as to improve comprehension
+    and fruibility.</p>
+  description: >-
+    Taking inspiration from various techniques developed for software
+    development, such as requirement and quality management, in this project we
+    investigated different approaches to present laws in formats which could
+    make them simpler to understand.
+
+    The work stemmed into three main branches:
+
+    <ul class="disc">
+      <li><b>Semantic annotation of laws.</b> The goal of the activity is the definition of
+      a markup to identify semantically rich concepts in the wording of laws.</li>
+      <li><b>Procedural Laws and Processes</b> Various laws, such as the electoral law, describe
+      the way in which certain processes have to be executed.  Presenting such laws using
+      notations that are best suited to represent processes, such as BPMN, can improve the
+      way in which laws are interpreted and understood.  This line of activity investigated
+      how the Italian electoral law could be represented as a set of activity diagrams and
+      presented by different mediums, such as an interactive website</li>
+      <li><b>Traceability between Laws and Processes</b> Building upon the previous
+      work, we also extended a UML modeling tool to allow modellers to mantain
+      traceability between laws and the process (steps) they represent.  This
+      simplifies the manteinance process of laws in case procedures need to be
+      revised. The tool was applied to manage the evolution of electoral laws to
+      allow for an experimentation of electronic voting systems.</li>
+      <li><b>(Quantitative) Analysis of Laws</b> In many countries reading laws
+      can be a daunting task.  This is not only due to the wording or the way in
+      which some laws are written, but also to the many changes law undergo in their
+      lifecycle and to the many cross-references that need to be analyzed to get
+      a complete picture.  In many ways, such dependencies in legal documents
+      resemble those which can be found in source code files when developing
+      software.  Quality metrics have been defined in software development to
+      analyze how difficult it is to mantain source code.  In this line of
+      activity we analyzed the Italian body of laws applying metrics to measure their
+      complexity and using visualization tools to simplify the browsing of laws.
+      </li>
+    </ul>
+  gallery:
+    - url: /images/projects/ict4laws/graph.png
+      caption: a portion of the inter-dependencies among laws in the Italian body of laws
+    - url: /images/projects/ict4laws/plots.png
+      caption: some analyses about the evolution of the Italian body of laws
+    - url: /images/projects/ict4laws/vlpm-process.png
+      caption: managing evolution of procedures and laws
+    - url: /images/projects/ict4laws/vlpm-traceability.png
+      caption: an example of traceability between laws and processes
+
+- title: Social Accountability in Mozambique
+  acronym: SAMO
+  logo: /images/logos/samo.png
+  location: "Moamba, Mozambique"
+  source: "The World Bank"
+  pubs:
+      - CiaEshMol12
+      - DBLP:conf/dev/CiaghiEMV13
+  start_date: 2012-02-01
+  end_date: 2012-06-01
+  contact: Adolfo Villafiorita
+  abstract: >-
+    <p>Empowering citizens in making Governments more accountable and
+    transparent in the services they provide has gained more attention
+    in the last few years both in the developing and in the developed
+    world. At the basis of any such exercise, information and data
+    collection activities play an important role.</p>
+
+    <p>SAMO stands for "Social Accountability in Mozambique" and the project,
+    conducted in collaboration with the Ministry of
+    Education of Mozambique, the World Bank and the Maputo Living Lab had the goal of
+    collecting data about various procurement indicators of primary
+    schools in the Moamba district, a rural area of Mozambique.</p>
+
+    <p>For this purpose
+    we developed a data collection platform and a mobile application to conduct field work
+    and collected 677 interviews.</p>
+  description:
+    <p>Citizen involvement is critical for enhancing democratic
+    governance, improving service delivery, and fostering empowerment.
+    For these reasons many actors, among which the World Bank have
+    started or are starting initiatives to empower citizens in making
+    their Governments more accountable and transparent.</p>
+
+    <p>Such empowerment, however, can be exercised if an adequate
+    level of awareness and know-how are shared with and by the
+    citizens.  This includes not only information about a specific
+    situation or the current status of things in a specific sector
+    (like, e.g., the status of schools in a rural area), but also
+    know-how about the chain of responsibility and accountability.</p>
+
+    <p>In the project we developed an application based on a RoR
+    server and on an Android client.  In June 2012 we conducted in the
+    region of Moamba (Mozambique) in June 2012 about primary schools in
+    the region. The pilot, sponsored by the World Bank and aided by a
+    platform -- called SAMo, Social Accountability for Mozambique -- we
+    developed for the project, involved 677 citizens who commented on
+    various procurement indicators meant to measure the efficacy of
+    specific interventions in the region. Our contribution includes an
+    updated report on the status of various schools in the region, some
+    technical consideration about platforms for crowdsourcing data, and
+    some initial steps to better understand the process of social
+    accountability.</p>
+  team:
+    - name: Dirk Bronselaer
+      role: Project Sponsor
+    - name: Adolfo Villafiorita
+      role: Project Management, Data Analysis
+    - name: Aaron Ciaghi
+      role: Platform Development, Data Analysis
+    - name: Pietro Molini
+      role: Android Development, Training
+    - name: Birhanu Eshete
+      role: Platform Development
+    - name: Marco Battisti
+      role: Experimentation Coordination
+    - name: Eduardo Ali
+      role: Interviewers Team 1 Coordination
+    - name: Mohammad Tassin Sidi
+      role: Interviewers Team 2 Coordination

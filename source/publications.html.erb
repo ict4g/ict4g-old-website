@@ -1,0 +1,61 @@
+---
+title: 
+layout: default
+pub_types:
+  - publication_type: 'book'
+    title: 'Books'
+  - publication_type: 'editor'
+    title: 'Books as Editor'
+  - publication_type: 'book_chapter'
+    title: 'Book Chapters'
+  - publication_type: 'journal'
+    title: 'Articles in Journals'
+  - publication_type: 'conference'
+    title: 'Articles in Conferences'
+  - publication_type: 'workshop'
+    title: 'Workshops'
+  - publication_type: 'thesis'
+    title: 'Theses'
+---
+<div class="row">
+    <div class="small-12 large-3 columns">
+        <%= partial "pubs_menus.html", locals: {current:'all'} %>
+        <h3>FILTER</h3>
+        <a href="#" id="type-all" class="primary label">All</a>
+        <% for entry_spec in current_page.data.pub_types %>
+            <a id='type-<%= entry_spec.publication_type %>' href="#" class="secondary label"><%= entry_spec.title %></a>
+        <% end %>
+        </dl>
+    </div>
+    <div class="small-12 large-9 columns">
+        <h1>Publications by Type</h1>
+        <div id="publications-container">
+            <% for entry_spec in current_page.data.pub_types %>
+                <div class="type-container" id="type-<%= entry_spec.publication_type %>">
+                    <h2><%= entry_spec.title %></h2>
+
+                    <ol>
+                        <% b=bib_data() %>
+                        <%for i in 0...b.length %>
+                            <%if b[i][:keywords]== entry_spec.publication_type %>
+                                <%= partial "publication_item.html.erb", locals: {pub: b[i]} %>
+                            <%end %>
+                        <%end%>
+                    </ol>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+ $(document).ready(function() {
+     $('a[id^="type-"]').on('click',function(){
+         $('a').removeClass('primary').addClass('secondary');
+         $(this).addClass('primary').removeClass('secondary');
+         $('#publications-container').find('div.type-container').toggle(true);
+         if (this.id != 'type-all') {
+             $('#publications-container').find('div.type-container[id!="' + this.id + '"]').toggle();
+         }
+     });
+ });
+</script>

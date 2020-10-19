@@ -1,0 +1,41 @@
+---
+title: 
+layout: default
+---
+<div class="row">
+    <div class="small-12 large-2 columns">
+        <%= partial "projects_menu.html", locals: {current:'List'} %>
+    </div>
+    <div class="small-12 large-10 columns">
+        <h1>Projects</h1>
+        <% for project in data.projects.select { |x| not x.past } %>
+            <% project_path="/projects/"+slugify(project.title)+".html" %>
+            <div class="row" style="margin-bottom:30px">
+                <div class="large-12 columns">
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <% if project.logo != nil %>
+                                <%= image_tag(project.logo, width:"150px") %>
+                            <% end %>
+                        </div>
+                        <div class="large-10 columns">
+                            <h4><%= link_to project.title, project_path %></a></h4>
+                            <%= project.abstract %>
+                            <p>
+	                        <b>Period:</b>
+                                <%= project.start_date %> -
+                                <%= if project.end_date!= nil then project.end_date else "running" end %>
+                                <% if project.source %>
+                                    <br /><b>Sponsored by:</b> <%= project.source %>
+                                <% end %>
+                            </p>                            
+                            
+                            <p><%= link_to "More information ...", project_path %></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

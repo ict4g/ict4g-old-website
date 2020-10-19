@@ -1,0 +1,18 @@
+<% if (limit.is_a? Integer) and limit >= 0 %> 
+
+	<%i=0%>
+	<% blog('posts').articles.each do |post|%>
+	<% i=i+1 %>
+	<% if i>limit && limit>0
+		break 
+		end %>
+	  <div class="large-12 columns news-item">
+	       <p class="date"><%=post.date.strftime('%d/%m/%Y') %></p>
+	       <p class="title"><%=link_to post.title,post%></a></p>
+	       <p class="short"><%=post.metadata[:page]['short']%></p>  
+	  </div>
+	<% end %>
+
+<% else %>
+  <p>ERRORE variabile limit minore di 0 o non e' di tipo Integer</p>
+<% end %>

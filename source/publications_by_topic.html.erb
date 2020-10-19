@@ -1,0 +1,64 @@
+---
+title:
+layout: default
+---
+<div class="row">
+    <div class="small-12 large-3 columns">
+        <%= partial "pubs_menus.html.erb", locals: {current:'by_topic'} %>
+
+        <% unique_tags = Array.new %>
+        <% b=bib_data() %>
+        <%# binding.pry %>
+        <%for i in 0...b.length %>
+            <%if b[i][:topics]!= nil %>
+                <% for tag in b[i][:topics].split(", ") %>
+                    <% if !unique_tags.include?(tag) %>
+                        <% unique_tags.push(tag)%>
+                    <% end %>
+                <% end %>
+            <% end %>
+        <%end%>
+        <% unique_tags = unique_tags.sort%>
+
+        <h3>FILTER</h3>
+        <p>
+            <%= link_to "show all","#",onclick:"$(this).show_all()", class:"primary label", id:"show_all"%>
+
+            <% for tag in unique_tags %>
+                <%= link_to tag, "#",onclick:"$(this).filter_by_tag()", class:"secondary label", id: tag %>
+            <% end %>
+        </p>
+    </div>
+
+    <div class="small-12 large-9 columns">
+        <h1>Publications by Topic</h1>
+        <% for i in 0...b.length %>
+            <div class="row">
+                <div class="small-12 columns publications_div <%=b[i][:topics]!= nil ? b[i][:topics].gsub(/,/,'') : ""%>">
+                    <ol>
+                        <%= partial "publication_item.html.erb", locals: {pub: b[i]} %>
+                    </ol>
+                </div> 
+            </div>
+        <% end %>
+    </div>
+
+    <script>
+     $(document).ready(function() {
+         $.fn.filter_by_tag = function() {
+             $('#show_all').removeClass('primary').addClass('secondary');
+             $('.primary.label').removeClass('primary').addClass('secondary'); 
+             this.removeClass('secondary').addClass('primary');
+             $('.primary.label').each(function(){
+                 $(".publications_div").hide();
+                 $("."+$(this).attr('id')).show();
+             });
+         }
+
+         $.fn.show_all = function() {
+             $('.primary.label').removeClass('primary').addClass('secondary');
+             $('#show_all').removeClass('secondary').addClass('primary');
+             $(".publications_div").show();
+         }
+     });
+    </script>

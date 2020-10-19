@@ -1,0 +1,24 @@
+---
+title: Tools
+layout: default
+---
+<% for tool in data.tools.select { |x| not x.past } %>
+  <div class="row" style="margin-bottom:30px">
+    <div class="large-12 columns">
+      <h4><%=tool.name%></h4>
+
+      <div class="row">
+        <div class="large-2 columns">
+          <% if tool.logo != nil %>
+            <%= image_tag(tool.logo, width:"140px")%>
+          <% end %>
+        </div>
+        <div class="large-10 columns">
+          <%=tool.description%>
+          
+          <p><b>Homepage: <%=link_to tool.url,tool.url%></b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,95 @@
+---
+layout: default
+---
+<h1><%= name %></h1>
+<div class="row" style="margin:10px">
+  <div class="large-2 columns" style="padding:0px">
+    <% if picture != nil %>
+    <%= image_tag "/images/members/#{picture}" %>
+    <% else %>
+    <%= image_tag "/images/members/no_picture.jpg" %>
+    <%end%>
+  </div>
+  <div class="large-10 columns">
+    <div class="row">
+      <div class="large-12 columns" style="background:#F2F2F2">
+        <p>
+          <h3><%=name%></h3>
+          <h4><%=role%></h4>
+        </p>
+      </div>
+    </div>
+    <div class="row" style="line-height:140%">
+      <div class="large-12 columns">
+        <ul class="no-bullet">
+          <% if email != nil %>
+          <li>
+            <i class="fa fa-envelope-o"></i>
+            <%= mailto email, "Contact " + name %>
+          </li>
+          <% end %>
+          <li>
+            <i class="fa fa-phone"></i>
+            <a href="tel:<%=phone%>"> <%=phone%></a>
+          </li> 
+          <li>
+            <i class="fa fa-github-alt"></i>
+            <a href="http://github.com/<%=github%>"><%=github%></a>
+          </li> 
+          <li>
+            <i class="fa fa-external-link-square"></i>
+            <a href="<%= homepage%>"><%=homepage%></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="margin:10px">
+  <div class="large-2 columns" style="text-align:right;padding:10px;color:white;background:black;">
+    SHORT BIO
+  </div>
+  <div class="large-10 columns">
+    <p>
+      <%=short_bio%>
+    </p>
+  </div>
+</div>
+<div class="row" style="margin:10px">
+  <div class="large-2 columns" style="text-align:right;padding:10px;color:white;background:black;">
+    PROJECTS
+  </div>
+  <div class="large-10 columns">
+    <% for project in data.projects %>
+      <% if project.team != nil %>
+        <% for team in project.team %>
+          <% if team.name == name %>
+              <% project_path="/projects/"+slugify(project.title)+".html" %>
+              <h3><%= link_to project.title, project_path %></h3>
+              <p>
+                Role: <%= team.role%>
+                <%= project.abstract%>
+                <%= link_to "More information ...", project_path%>
+              </p>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<div class="row" style="margin:10px">
+  <div class="large-2 columns" style="text-align:right;padding:10px;color:white;background:black;">
+    PUBLICATIONS
+  </div>
+  <div class="large-10 columns">
+  <% b=bib_data() %>
+  <%for i in 0...b.length %>
+      <% name_array=name.split(' ')%>
+      <%if b[i][:author]!=nil %>
+        <%if b[i][:author].gsub(/,/,'').index(name_array.last) %>
+          <%= partial "publication_item.html.erb", locals: {pub: b[i]} %>
+        <%end%>
+      <%end%>
+    <%end%>
+  </div>
+</div>

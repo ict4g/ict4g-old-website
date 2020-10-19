@@ -1,0 +1,12 @@
+---
+title: Past Collaborators
+layout: default
+---
+<dl>
+<% for member in data.members %>
+<% if member.past != nil %>
+   <dt><%=member.name%></dt>
+   <dd><%=member.short_bio%></dd>
+<% end %>
+<% end %>
+</dl>

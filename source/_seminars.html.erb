@@ -1,0 +1,21 @@
+<% if (limit.is_a? Integer) and limit >= 0 %>  
+  
+  <%i=0%>
+  <% data.seminars.reverse.each do |seminar|  %>
+  	<% i=i+1 %>
+  	<% if i>limit && limit>0
+  		break 
+  		end %>
+  	<% seminar_path="/seminars/"+slugify(seminar.title)+".html" %>
+    <%# This is the only way to use reversed and limit together on something different from posts %> 
+      <div class="small-12 columns seminar-item">
+        <p><%= link_to seminar.title, seminar_path%></p>
+        <p class="date"><%= DateTime.strptime(seminar.date,'%Y-%m-%d %H:%M').strftime('%A, %B %d, %Y - %H:%M') %> </p>
+        <p class="location">Location: <%=seminar.room%></p>
+        <p class="speaker">Speaker: <%=seminar.speaker%></p>
+      </div>
+  <% end %>
+  
+<% else %>
+  <p>ERRORE variabile limit miore di 0 o non e' di tipo Integer</p>
+<% end %>

@@ -1,0 +1,64 @@
+---
+title: 
+layout: default
+---
+<div class="row">
+    <div class="small-12 large-2 columns">
+        <%= partial "projects_menu.html", locals: {current:'Timeline'} %>
+    </div>
+    <div class="small-12 large-10 columns">
+        <h1>Projects</h1>
+        <div id="map-canvas"></div>
+    </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script>
+  function initialize() {
+    var geocoder = new google.maps.Geocoder();
+    var myLatlng = new google.maps.LatLng(0,0);
+    var infowindow=null;
+    var mapOptions = {
+      zoom: 2,
+      center: myLatlng
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    <% for p in data.projects %>
+          <% project_path=aurl("/projects/"+slugify(p.title)+".html") %>
+          geocoder.geocode( { 'address': "<%= p.location%>"}, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                  var str="<h3 style='text-align:center'><%= p.title%></h3>"+"<div style='text-align:center'>"+<% if p.logo!=nil%>"<img src='<%= aurl(p.logo)%>' height='60' width='60'> "+<%end%> "<a href='<%= project_path %>'>More information ...</a>";
+                  <% for pr in data.projects %>
+                    <% if p!=pr && p.location==pr.location%>
+                        <% project_path=aurl("/projects/"+slugify(pr.title)+".html") %>
+                        str=str+"<hr>"+"<h3 style='text-align:center'><%= pr.title%></h3>"+"<div style='text-align:center'>"+<% if pr.logo!=nil%>"<img src='<%= aurl(pr.logo)%>' height='60' width='60'> "+<%end%> "<a href='<%= project_path %>'>More information ...</a></div>";
+                    <% end %>
+                  <% end %>
+                  var marker = new google.maps.Marker({
+                      map: map,
+                      position: results[0].geometry.location,
+                      title: "<%= p.title%>"
+                  });
+                  var infowindow = new google.maps.InfoWindow({
+                      content: str,
+                      maxWidth: 400
+
+                  });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                    map.setZoom(6);
+                    map.setCenter(marker.getPosition());
+                    infowindow.open(map,marker);
+                  });
+            } else {
+              alert('Geocode was not successful for the following reason: ' + status);
+            }
+          }); 
+          
+    <% end %>
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+

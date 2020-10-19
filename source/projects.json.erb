@@ -1,0 +1,37 @@
+{
+    "timeline":
+    {
+        "headline":"",
+        "type":"default",
+        "text":"",
+        "asset": {
+            "media":""
+        },
+        "date": [
+        <% for p in data.projects %>
+        <% project_path=aurl("/projects/"+slugify(p.title)+".html") %>
+            {
+                "startDate":"<%= p.start_date.strftime('%Y,%-m,%-e')%>",
+                "endDate":"<%= if p.end_date!= nil then p.end_date.strftime('%Y,%-m,%-e') else Time.new.strftime('%Y,%-m,%-e')end %>",
+                "headline":"<%= p.title %>",
+                "text":"<a href='<%= project_path %>'>More information ...</a>",
+                "tag":"<%= p.acronym %>",
+                "asset": {
+                    "media":"<%= p.logo!=nil ? aurl(p.logo) : "" %>",
+                    "thumbnail":"<%= p.logo!=nil ? aurl(p.logo) : "" %>"
+                }
+            },
+        <% end %>
+            {
+                "startDate":"",
+                "endDate":"",
+                "headline":"",
+                "text":"",
+                "tag":"",
+                "asset": {
+                    "media":""
+                }
+            }
+        ]
+    }
+}

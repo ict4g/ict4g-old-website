@@ -1,0 +1,49 @@
+---
+title: Team
+layout: default
+---
+<div class="row">
+  <% for member in data.members %>
+  <% profile_path="/profile/"+slugify(member.name)+".html" %>
+  <% if member.past == nil %>
+  <div class="large-5 medium-5 small-11 columns left" style="margin:5px">
+    <div class="row" style="background:#F2F2F2">
+      <div class="large-4 medium-4 small-2 columns" style="padding:0px">
+          <% link_to profile_path do %>
+            <% if member.picture != nil %>
+            <%= image_tag "/images/members/"+member.picture, :style => "height: 140px ; width: 140px"%>
+            <% else %>
+            <%= image_tag "/images/members/no_picture.jpg", :style => "height: 140px ; width: 140px"%>
+            <% end %>
+          <% end %>
+      </div>
+      <div class="large-8 medium-8 small-10 columns" style="padding:10px;line-height:140%">
+        <% link_to profile_path do %>
+          <%= member.name%> <br />
+        <% end %>
+        <%= member.role%> <br />
+        <i class="fa fa-envelope-o"></i>  <%= mailto member.email, "Contact " + member.name %><br />
+        <% if member.phone != nil %> 
+          <i class="fa fa-phone"></i>
+          <%= link_to member.phone,"tel:"+member.phone %> <br />
+        <% end %>
+        <% if member.github != nil %>
+        <i class="fa fa-github-alt"></i>
+        <%= link_to member.github,"http://github.com/"+member.github %> <br />
+        <% end %>
+      </div> 
+    </div>
+    <div class="row">
+      <div class="large-5 columns large-offset-7" style="text-align:center;padding:5px;font-size:smaller;background:#474747"> 
+        <%= link_to "VIEW PROFILE",profile_path, :style =>"color:white" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+</div>
+
+<div class="row">
+<p>
+  Many people collaborated with the group; here you can access a list of the <%= link_to "past members","/people_past.html"%>
+</div>

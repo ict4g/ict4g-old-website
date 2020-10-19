@@ -1,0 +1,23 @@
+{
+  "name": "ict4g-website",
+  "version": "0.0.0",
+  "authors": [
+    "ict4g"
+  ],
+  "description": "bower for ict4g-website",
+  "main": "source/index.html",
+  "license": "MIT",
+  "homepage": "http://ict4g.org/home/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fastclick": ">=0.6.11",
+    "foundation": "zurb/bower-foundation"
+  }
+}

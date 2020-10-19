@@ -1,0 +1,15 @@
+<% if current!='List' and current!='Timeline' and current!='Location' %>
+    <p>ERRORE variabile current errata</p> 
+<% else %>	
+    <ul class="side-nav">
+	<li id='List'><a href="projects.html">List</a></li>
+	<li id='Timeline'><a href="projects_timeline.html">Timeline</a></li>
+	<li id='Location'><a href="projects_by_loc.html">Location</a></li>
+    </ul>
+<% end %>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('li#<%=current %>').addClass('active');
+});
+</script>

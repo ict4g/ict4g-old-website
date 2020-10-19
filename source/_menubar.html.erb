@@ -1,0 +1,31 @@
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+      <li class="name">
+          <div class="show-for-small hide-for-medium hide-for-large">
+              <%= image_tag("/images/website/ict4g-logo.png", width:"55px") %>
+          </div>
+      </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon">
+      <a href="#"><span>Menu</span></a>
+    </li>
+  </ul>
+  <section class="top-bar-section"> <!-- Right Nav Section --> 
+    <ul class="left"> 
+      <li><%= link_to "Home", "/index.html" %></li>
+      <li><%= link_to "People", "/people.html" %></li>
+      <li><%= link_to "Projects", "/projects.html" %></li>
+      <li><%= link_to "Tools", "/tools.html" %></li>
+      <li><%= link_to "Publications", "/featured_publications.html" %></li>
+      <li><%= link_to "Slides", "/presentations.html"%></li>
+      <li><%= link_to "Open Positions", "/open_positions.html" %></li>
+      <li><%= link_to "Reach us", "/reach_us.html" %></li>
+      <% if false %>   <li><%= link_to "Seminars", "/seminars.html" %></li> <% end %>
+      <li><%= link_to "News", "/news.html" %></li>
+      <li class="show-for-small hide-for-medium hide-for-large">
+          <%= partial "layouts/search_field.html" %>
+      </li>
+      </div>
+    </ul> 
+  </section> 
+</nav>

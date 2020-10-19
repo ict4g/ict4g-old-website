@@ -1,0 +1,41 @@
+<% if (pub.is_a? Hash) and pub[:bibtex_key] != nil %>
+  <li class="bib-item">
+    <p class="bib-entry"><%=bib_entry(pub[:bibtex_key])%></p>
+    <div class="bib-buttons">
+      <% if pub[:abstract] %>
+        <span class="my-button abstract-button">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-flash fa-stack-1x fa-inverse"></i>
+          </span>
+          Abstract
+        </span>
+      <% end %>
+      <span class="my-button bibtex-button">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+        </span>
+        BibTeX
+      </span>
+      <%if pub[:download] %>
+        <% link_to pub[:download], class:"pdf-link" do%>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+          </span>
+          PDF
+        <% end%>
+      <% end %>
+    </div>    
+    <% if pub[:abstract] %>
+      <div class="panel abstract" style="display: none"><%=pub[:abstract]%></div>
+    <% end %>
+    <div class="panel bibentry" style="display: none; font-size:1rem;overflow-x: scroll">
+      <pre><%=bib(pub[:bibtex_key])%></pre>
+    </div>
+  </li>
+
+<% else %>
+  <p>ERRORE, la variabile pub non e' di tipo Hash o la sua chiave e' nil</p>
+<% end %>

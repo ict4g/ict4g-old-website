@@ -1,0 +1,12 @@
+---
+title: "Bring the Food at Radio24 - Si puo' fare"
+layout: post
+short: "Radio show about food waste with a short interview about Bring the Food"
+date: 2013-10-23
+links:
+  - label: website
+    value: http://www.radio24.ilsole24ore.com/player.php?channel=2&idprogramma=paese-migliore&date=2013-10-20&idpuntata=gSLA7vTBX
+---
+On the 20th of October 2013, Radio24 interviewed Adolfo Villafiorita about our application BringTheFood.
+
+"Here":http://www.radio24.ilsole24ore.com/player.php?channel=2&idprogramma=paese-migliore&date=2013-10-20&idpuntata=gSLA7vTBX you can listen to the program; at minute 26:50 they talk about food waste, and at minute 35:00 you can find the interview.

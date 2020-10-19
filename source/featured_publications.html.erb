@@ -1,0 +1,23 @@
+---
+title: 
+layout: default
+---
+<div class="row">
+    <div class="small-12 large-3 columns">
+        <%= partial "pubs_menus.html.erb", locals: {current:'featured'} %>
+    </div>
+    <div class="small-12 large-9 columns">
+        <h1>Featured Publications</h1>
+
+        <p>Some of our recent publications that best define our work.</p>
+
+        <ol>
+	    <% b=bib_data() %>
+            <%for i in 0...b.length %>
+                <%if b[i][:featured] == "true" %>
+      	            <%= partial "publication_item.html.erb", locals: {pub: b[i]} %>
+                <%end %>
+            <%end%>
+        </ol>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+.img-framed {
+  @include thumb(
+    // Width of border around thumbnail
+    $border-width: 2px,
+    // Box shadow to apply to thumbnail
+    $box-shadow: 0 0 0 1px rgba(#000,.2),
+    // Box shadow to apply on hover
+    $box-shadow-hover: 0 0 6px 1px rgba(#ccc,0.5)
+  );
+}
+
+.my-button {
+  color: rgb(255, 147, 36);
+  cursor: pointer;
+}
+
+.home-news h2, .home-seminars h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 40px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.home-news h2 {
+  background: url(../images/website/icon_news.png) 0 50% no-repeat;
+}
+
+.home-seminars h2 {
+  background: url(../images/website/icon_seminars.png) 0 50% no-repeat;
+}
+
+.news-item, .seminar-item {
+  p:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .date {
+    font-style: normal;
+    color: gray;
+  }
+}
+
+.orbit-container .orbit-slides-container > li {
+  height: 313px;
+  overflow: hidden;
+}
+
+// bibliography stuff
+.bib-item {
+  /* list-style: none; */
+  margin-bottom: 1.5em;
+  .bib-entry {
+    margin-bottom: 5px;
+  }
+  .bib-buttons {
+    font-size: 10px;
+    &>span, &>a {
+      color: #999;
+      margin: 0 5px;
+    }
+    &>span:hover, &>a:hover {
+      color: $primary-color
+    }
+  }
+}
+
+#map-canvas{
+  height: 400px;
+        margin: 0px;
+        padding: 0px;
+
+  img{
+    max-width:none;
+  }
+
+}
+
+// .orbit-container .orbit-slides-container > * {
+//   max-height: 312px;
+//   overflow: hidden;
+// }

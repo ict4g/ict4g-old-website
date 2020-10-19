@@ -1,0 +1,148 @@
+- name: Ali Fawzi Al-Shammari
+  title: "OVVM: Open Vote Verification Technique for DRE Systems"
+  period: 2011-2015
+  institution: University of Bolzano
+  abstract: >-
+    For the last two decades, researchers in e-voting have been looking for
+    solutions that could facilitate the election process. These efforts led to
+    different e-voting systems implementations, among which we mention the
+    optical scan systems, the Direct Recording Electronic (DRE) system, and
+    the Online (Internet) voting systems. In parallel with the use of e-voting
+    systems, many questions emerge. One of these questions is how to allow
+    voters or any third party to verify votes are correctly captured, stored,
+    and counted. This underlines the fact that an e-voting system is not only
+    required for ensuring its technical and procedural security, but must also
+    provide mechanisms by which voters verify their votes during and after
+    casting, and other observer verify the correctness and integrity of
+    election results. To facilitate the vote verification process, a number of
+    verification techniques (either physical or digital) have been
+    developed. However, I observed that these techniques have a number of
+    limitations. Also, they are not based on interoperable components and
+    processes, and lock the use to a specific technology (vendor lock-in). In
+    order to address these issues, I propose an Open Vote Verification Method
+    (OVVM) for a DRE e-voting system that allows independent Verification
+    Modules (VM) made by different firms to interoperate with the DRE voting
+    machine. The OVVM helps sharing the entire trust among multiple vendors
+    that produce the system components. Furthermore, I propose an example
+    implementation to demonstrate the approach and to hint how a better
+    balance can be achieved between the verifiability and privacy. Finally, I
+    evaluate the OVVM approach based on a prototype implementation. The output
+    of the final step is a set of requirements at which an OVVM system could
+    be able to mitigate most of the known challenges of the DRE system.
+
+- name: Ahmed Fadhil
+  title: Persuasive Technology in Diet Management
+  period: 2015-2018
+  abstract: >-
+    Various health risks are related to unhealthy lifestyles and poor
+    dietary habits. A number of pathologies due to these health risk
+    behaviors represent a serious challenge, resulting in disabling or
+    life-threatening repercussions. People struggle to adhere to
+    dietary requirements, exercise, and lifestyle
+    recommendations. Additionally, decreased motivation results in a
+    probability of negative health implications.
+
+    This study evaluates existing technologies used to have users
+    adhere to sustained healthy behavior. We investigate persuasive
+    technology and gamification strategies to reinforce users in
+    exercising and healthy food substitution. We intend to develop a
+    model to be used in creating-producing widgets to persuade people
+    change their lifestyle. Subsequently, our model facilitates a
+    sustained diet management plan supported by healthcare experts to
+    intervene in the activity, only when necessary.
+
+- name: Bihranu Mekuria Eshete
+  url: https://www.cs.uic.edu/~beshete/
+  title: Effective Analysis, Characterization, and Detection of Malicious Activities on the Web
+  period: 2011-2013
+  abstract: >-
+    Cyber-criminals use the Web as a medium to perform malicious
+    activities motivated by illegitimate benefits. Victims are often
+    lured to visit malicious web pages and end up loosing their
+    invaluable credentials or they get their systems compromised by
+    malware that uses victims’ devices to mount future attacks. While
+    the state-of-art to thwart web-borne malware is promising, it is
+    yet limited in addressing the following three challenges. First,
+    existing techniques are limited to partial characterization of
+    attack payloads. Secondly, attacker-motivated and benign evolution
+    of web page artifacts have challenged the resilience of existing
+    detection techniques. Thirdly, exploit kits have become
+    increasingly prevalent as the major means to spread web-borne
+    malware.
+
+    This dissertation presents approaches and tools to address these
+    challenges. To address partial characterization of attack payloads, we
+    propose a holistic and lightweight approach that combines static analysis
+    and minimalistic emulation to analyze and detect malicious web
+    pages. Evaluation of the approach on a large corpus of web pages shows
+    that the approach not only is precise enough in detecting malicious web
+    pages with very low false signals but also does detection with a minimal
+    performance penalty. To address evolution of web page artifacts, we
+    propose an evolution-aware approach that tunes detection models inline
+    with evolution of web page artifacts. Evaluation of our approach suggests
+    that it reduces false negatives by about 10% on a fairly large test corpus
+    of web pages. To tackle prevalence of exploit kits, we develop an approach
+    that leverages attack-centric and self-defense behaviors of exploit kits
+    to detect malicious URLs. The evaluation of our classifiers shows that our
+    approach is effective in precisely detecting malicious URLs linked with
+    exploit kits and it incurs very low false positives.
+
+- name: Aaron Ciaghi
+  url: http://aaronsama.github.io
+  title: "Standardizing ICT for Development: Towards the Definition of a Standard Process and Maturity Model for ICTD Projects"
+  period: 2010-2012
+  abstract: >-
+    The use of ICTs to stimulate socio-economic development has significantly
+    grown in popularity in the recent years and has been boosted by the
+    “mobile revolution” of the last decade. Despite the multi-year experience
+    of academics, donor agencies and businesses, the failure rate of ICT for
+    Development projects is still very high, resulting in a significant waste
+    of resources. The multiple challenges that must be faced simultaneously in
+    these projects make them more difficult than “traditional” ICT projects
+    and recommendations such as best practices to face them have been
+    suggested over the years. Nonetheless, the systematic replicability of
+    these practices has never been addressed and project management and
+    formalized development processes that address the particular challenges of
+    the domain are extremely rare. This thesis presents a Maturity Model
+    derived from the experience of researchers and practitioners, collected
+    through an extensive literature review and interviews, that aims at
+    providing a set of guidelines to be used throughout an ICT for Development
+    intervention to increase the probability of success.
+
+- name: Komminist Sisai Weldemariam
+  url: http://researcher.watson.ibm.com/researcher/view.php?person=ke-k.weldemariam
+  title: Using Formal Methods for Building More Reliable and Secure e-voting Systems
+  period: 2010-2012
+  abstract: >-
+    Deploying a system in a safe and secure manner requires ensuring the
+    technical and procedural levels of assurance also with respect to social
+    and regulatory frameworks. This is because threats and attacks may not
+    only derive from pitfalls in complex security critical system, but also
+    from ill-designed procedures. However, existing methodologies are not
+    mature enough to embrace procedural implications and the need for
+    multidisciplinary approach on the safe and secure operation of
+    system. This is particularly common in electronic voting (e-voting)
+    systems. This dissertation focuses along two lines. First, we propose an
+    approach to guarantee a reasonable security to the overall systems by
+    performing for- mal procedural security analysis. We apply existing
+    techniques and define novel methodologies and approaches for the analysis
+    and verification of procedural rich systems. This includes not only the
+    definition of adequate modeling convention, but also the definition of
+    general techniques for the injection of attacks, and for the
+    transformation of process models into representations that can be given as
+    input to model checkers. With this it is possible to understand and
+    highlight how the switch to the new technological solution changes
+    security, with the ultimate goal of defining the procedures regulating
+    system and system processes that ensure a sufficient level of security for
+    the system as well as for its procedures. We then investigate the usage of
+    formal methods to study and analyze the strength and weaknesses of
+    currently deployed (e-voting) system in order to build the next generation
+    (e-voting) systems. More specifically, we show how formal verification
+    techniques can be used to model and reason about the security of an
+    existing e-voting system. To do that, we reuse the methodology propose for
+    procedural security analysis. The practical applicability of the
+    approaches is demonstrated in several case studies from the domain of
+    public administrations in general and in e-voting system in
+    particular. With this it can be possible to build more secu§re, reliable,
+    and trustworthy e-voting system.
+
